@@ -157,7 +157,7 @@
 }
 
 .col-protection {
-    width: 15%;
+    min-width: 15%;
     padding-left: 25px;
 }
 
