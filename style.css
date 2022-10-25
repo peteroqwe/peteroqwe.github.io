@@ -1,0 +1,281 @@
+/* BODY */
+
+.body {
+    padding: 56px 64px 41px 64px;
+    display: flex;
+    min-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.content {
+    max-width: 1312px;
+}
+
+/* HEADER */
+
+.header {
+    padding-bottom: 84px;
+    max-width: 915px;
+}
+
+.header .title {
+    height: 96px;
+    font-size: 72px;
+    color: #000000;
+    padding-bottom: 4px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header .rus-icon {
+    margin-left: 15px;
+    height: 55px;
+    width: 65px;
+    background-image: url("./russia.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.header .description {
+    font-size: 46px;
+    color: #000000;
+}
+
+
+/* CATEGORY_FILTER */
+
+.category-filter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 100%;
+    max-width: 1283px;
+    margin-bottom: 56px;
+}
+
+.category-filter .category {
+    font-size: 21px;
+    text-align: center;
+    color: #000000;
+
+    box-sizing: border-box;
+    border: 3px solid #FFA800;
+    border-radius: 96px;
+    height: 56px;
+
+    padding: 15px 30px;
+    margin-bottom: 14px;
+
+    margin-right: 26px;
+}
+
+.category-filter .active {
+    background-color: #FFA800;
+}
+
+.category-filter .hover {
+    background-color: #FFC24A;
+    border-color: #FFC24A;
+}
+
+/* CATEGORIES */
+
+.category-list {
+    margin-bottom: 57px;
+}
+
+.category-item {
+    padding-bottom: 112px;
+}
+
+.category-item:last-child {
+    padding-bottom: 0px;
+}
+
+.category-title {
+    font-size: 46px;
+    color: #000000;
+    padding-bottom: 28px;
+}
+
+.category-description {
+    font-size: 32px;
+    line-height: 37px;
+    padding-bottom: 42px;
+    color: #000000;
+}
+
+
+/* TABLE */
+
+#items {
+    /* border-collapse: collapse; */
+    width: 100%;
+}
+
+#items td,
+#items th {
+    text-align: left;
+
+    border: 1px solid #ddd;
+
+    padding-top: 14px;
+    padding-bottom: 14px;
+
+    line-height: 28px;
+
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+#items th {
+
+    font-weight: 400;
+    font-size: 21px;
+    color: rgba(0, 0, 0, 0.45);
+    border: none;
+}
+
+
+/* КОЛОНКИ ТАБЛИЦЫ */
+
+.col-title {
+    width: 35%;
+}
+
+.col-amount {
+    width: 15%;
+}
+
+.col-protection {
+    width: 15%;
+    padding-left: 25px;
+}
+
+
+.col-note {
+    min-width: 35%;
+    padding-left: 25px;
+}
+
+/* TABLE CELLS */
+
+#items .amount-cell {
+    text-align: center;
+}
+
+
+/* КНОПКА ПЕЧАТИ */
+
+.print-section {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 113px;
+}
+
+.btn-print {
+    width: 559px;
+    height: 98px;
+
+    background: #FFA800;
+    box-shadow: 0px 4px 56px rgba(255, 168, 0, 0.75);
+    border-radius: 96px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+
+    text-align: center;
+
+    color: #FFFFFF;
+    border: none;
+    margin-right: 20px;
+
+    cursor: pointer;
+}
+
+.btn-print-icon {
+    background: #FFFFFF;
+    border: 4px solid #FFA800;
+    border-radius: 96px;
+    box-sizing: border-box;
+    width: 82.29px;
+    height: 82.29px;
+    background: url(./download_icon.png) no-repeat;
+    font-size: 16px;
+    cursor: pointer;
+    color: #FFA800;
+}
+
+.print-section .hover {
+    background: #FFC24A;
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.45);
+}
+
+.footer div {
+    margin-right: 20px;
+}
+
+/* TOOLTIP */
+
+.title {
+    height: 70px;
+    font-size: 21px;
+
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    z-index: 9999;
+
+    position: absolute;
+    display: none;
+    top:0px;
+    left:0px;
+
+    font-size: 18px;
+    line-height: 24px;
+
+    padding: 24px 31px 47px 31px;
+
+    width: 493px;
+    height: 485px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 60px rgba(109, 109, 109, 0.25);
+    border-radius: 50px;
+
+    opacity: 0;
+    transition: opacity 1s
+}
+
+@media (max-width: 1200px) {
+    .last-col{
+        display: none;
+    }
+}

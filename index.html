@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="./posts.js"></script>
+    <script src="./index.js"></script>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body class="body">
+    <div class="content">
+        <div class="header">
+            <div class="title">
+                <div>mobik.info</div>
+                <div class="rus-icon"></div>
+            </div>
+            <div class="description">
+                Список снаряжения для мобилизованных
+                на основе рекомендаций с фронта
+            </div>
+        </div>
+
+        <div class="category-filter">
+            <div class="category all" data-filter="all">Все категории</div>
+            <div class="category" data-filter="Готовые бронежилеты">Готовые бронежилеты</div>
+            <div class="category" data-filter="Бронежилеты «соберу сам»">Бронежилеты «соберу сам»</div>
+            <div class="category" data-filter="Шлемы">Шлемы</div>
+            <div class="category" data-filter="Медицина">Медицина</div>
+            <div class="category" data-filter="Баллистические очки">Баллистические очки</div>
+            <div class="category" data-filter="Одежда">Одежда</div>
+            <div class="category" data-filter="Обувь">Обувь</div>
+            <div class="category" data-filter="Бивачное снаряжение">Бивачное снаряжение</div>
+            <div class="category" data-filter="Рюкзаки">Рюкзаки</div>
+        </div>
+
+        <div class="category-list" id="category-list">
+            <span class="tooltiptext">
+                <div class="title">
+                    Классы бронезащиты
+                </div>
+
+                <p>Класс 5А по ГОСТу до 2014 года выдерживает выстрел пулей 7,62 мм с 5 метров.</p>
+                <p>Класс Бр5 соответствует классу 5А по новому ГОСТу после 2014 года.</p>
+                <p>Класс 4 (Бр4) выдерживает выстрел пулей 5,45 мм с 5 метров.</p>
+
+                <p>Для повышения класса с 4 (Бр4) до 5А (Бр5) рекомендуется ставить дополнительные антирикошетные пакеты
+                    и пакеты Арамид.
+                    Они есть в списке в разделе Бронежилеты «соберу сам»</p>
+            </span>
+        </div>
+
+        <div class="print-section">
+            <button type="button" onclick="print()" class="btn-print"> Распечатать</button>
+            <button class="btn-print-icon" onclick="print()"><i class="fa fa-download"></i></button>
+
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="footer">
+        <div>
+            mobik.info
+        </div>
+        <div>
+            Почта проекта
+            Телеграм
+        </div>
+        <div>
+            Сайт создали Peter King, Gernar, Done,
+            Binary Anarchism, Аня Касаткина и Кирилл Круглов
+        </div>
+        <div>
+            Благодарим Разведоса, Франка, Фокса
+            и Хаски за помощь в создании списка
+        </div>
+</body>
+
+</html>
