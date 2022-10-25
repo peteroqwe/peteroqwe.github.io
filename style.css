@@ -149,15 +149,15 @@
 /* КОЛОНКИ ТАБЛИЦЫ */
 
 .col-title {
-    width: 35%;
+    width: 33%;
 }
 
 .col-amount {
-    width: 15%;
+    width: 17%;
 }
 
 .col-protection {
-    min-width: 15%;
+    width: 16%;
     padding-left: 25px;
 }
 
@@ -275,6 +275,11 @@
 }
 
 @media (max-width: 1200px) {
+
+    .col-protection {
+        min-width: 15%;
+        width: auto;
+    }
     .last-col{
         display: none;
     }
