@@ -79,7 +79,7 @@ jQuery(document).ready(function ($) {
             (eventObject) {
             $('.tooltiptext').css({
                 "top": eventObject.pageY + 5,
-                "left": eventObject.pageX - 150,
+                "left": eventObject.pageX - 350,
                 "visibility": "visible",
                 "opacity": 1
             }).show()
