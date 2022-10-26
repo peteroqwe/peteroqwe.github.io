@@ -1,0 +1,26 @@
+name: Generate Minimal PDF
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  GeneratePdfArtifacts:
+    name: Generate PDFs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Generate Minimal PDF
+        uses: rseng/pdf-generator@master
+        with:        
+          paper_markdown: abs.md
+          paper_outfile: minimal.pdf
+          pdf_type: minimal
+
+      - name: Upload minimal pdf as artifact
+        uses: actions/upload-artifact@v2-preview
+        with:
+          name: minimal-pdf
+          path: minimal.pdf
