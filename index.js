@@ -19,6 +19,32 @@ function print() {
     setTimeout(function () { newWin.print(); }, 1000);
 }
 
+function download() {
+    console.log("Сохранение")
+    var divToPrint = document.getElementById('category-list');
+    var newWin = window.open();
+
+    var css = document.createElement('link');
+    css.rel = 'stylesheet';
+    css.href = 'style.css';
+    css.type = 'text/css';
+
+
+    newWin.document.write('<html><head>');
+    newWin.document.write('<link rel="stylesheet" href="style.css" type="text/css" media=\\"all\\" />');
+    newWin.document.write('</head><body >' + divToPrint.outerHTML + '</body>');
+    newWin.document.write('</html>');
+
+    newWin.document.getElementsByTagName('head')[0].appendChild(css);
+    
+    var pdf = new jsPDF('p', 'pt', 'letter');
+    pdf.canvas.height = 72 * 11;
+    pdf.canvas.width = 72 * 8.5;
+    pdf.fromHTML(newWin.body);
+    
+    setTimeout(function () { pdf.save('test.pdf'); }, 1000);
+}
+
 jQuery(document).ready(function ($) {
 
     data = pots[0]
