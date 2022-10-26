@@ -3,6 +3,7 @@
 .body {
     padding: 56px 64px 41px 64px;
     display: flex;
+    min-width: 100%;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
@@ -55,6 +56,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    min-width: 100%;
     max-width: 1283px;
     margin-bottom: 56px;
 }
@@ -116,6 +118,7 @@
 
 #items {
     /* border-collapse: collapse; */
+    width: 100%;
 }
 
 #items td,
@@ -174,6 +177,7 @@
 /* КНОПКА ПЕЧАТИ */
 
 .print-section {
+    min-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
