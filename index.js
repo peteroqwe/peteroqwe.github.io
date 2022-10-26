@@ -3,6 +3,7 @@ function print() {
     console.log("Печать")
     var divToPrint = document.getElementById('category-list');
     var newWin = window.open();
+    newWin.document.write('<body onafterprint="self.close()">');
 
     var css = document.createElement('link');
     css.rel = 'stylesheet';
