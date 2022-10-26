@@ -16,7 +16,9 @@ function print() {
     newWin.document.write('</html>');
 
     newWin.document.getElementsByTagName('head')[0].appendChild(css);
-    setTimeout(function () { newWin.print(); }, 1000);
+    newWin.document.close();
+    newWin.focus();
+    newWin.print();
 }
 
 jQuery(document).ready(function ($) {
